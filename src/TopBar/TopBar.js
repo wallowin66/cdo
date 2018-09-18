@@ -1,24 +1,22 @@
-// @flow
 import * as React from 'react'
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap'
-import './Topbar.css'
+import './TopBar.css'
 
-class Topbar extends React.Component<{}> {
+export default class TopBar extends React.Component{
   render() {
     return (
-      <Navbar light expand="sm" className="bg-light rounded d-none d-sm-flex mt-5 mb-5">
-        <NavbarBrand href="/">the corps of discovery online</NavbarBrand>
-        <Nav className="ml-auto" navbar>
-          <NavItem>
-            <NavLink href="#">map</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="/bib">bibliography</NavLink>
-          </NavItem>
-        </Nav>
-      </Navbar>
-    );
+      <div id="topbar" color="light">
+      <a href="https://library.lclark.edu/" target="_blank">
+        <img id="watzek" alt="watzek" src="watzek_logo.jpg"/>
+      </a>
+        <a href="http://lclark.edu" target="_blank">
+          <img id="lc" alt="lclark" src="lclark_logo.png"/>
+        </a>
+        <img id="title" alt="expedtiton maps" src="title.png"/>
+      </div>
+    )
   }
 }
-
-export default Topbar
+// <Button className="Button" color="primary" id="layers"
+// onClick={this.props.toggleLayers}>Layers</Button>
+// <Button className="Button" color="primary" id="settings">Settings</Button>
+//        <span id="text">Lewis & Clark Expedition Map</span>

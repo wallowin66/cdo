@@ -1,8 +1,81 @@
-.Sidebar {
-  width: 25rem;
-  height: 40rem;
-  z-index: 1020;
+#scroll{
+  height: 100%;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+
+  /* outline: 1px solid lightgrey; */
 }
+#img{
+  /* height:30%; */
+  margin: auto;
+  width:100%;
+}
+#header{
+  height:15%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 100%;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+}
+
+#contain{
+  height:85%;
+}
+
+#txt{
+  padding:.5rem;
+}
+
+.Sidebar {
+  width: 100%;
+  height: 92.5vh;
+  z-index: 1020;
+  background: url(../background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* border: 4px dashed blue; */
+
+}
+
+#exit{
+  width:2rem;
+  float:right;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .Sidebar {
+    width: 50%;
+    height: 92.5vh;
+    z-index: 1020;
+    background: url(../background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .Sidebar {
+    width: 30%;
+    height: 92.5vh;
+    z-index: 1020;
+    background: url(../background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+
+
 
 .card-img-top {
   border-radius: 0;
